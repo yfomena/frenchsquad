@@ -1,0 +1,33 @@
+{
+  "name": "frenchsquad",
+  "version": "1.0.0",
+  "description": "Website of the frenchSquad, french top guilde on twd nml",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "frenchSquad",
+    "french",
+    "twd"
+  ],
+  "authors": [
+    "$telio"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "materialize": "~0.97.7",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.7",
+    "angular-route": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}
