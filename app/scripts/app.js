@@ -19,8 +19,8 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                 }
             })
                     // route for the sniper page
-            .state('app.sniper', {
-                url:'sniper',
+            .state('app.hunter', {
+                url:'hunter',
                 views: {
                     'content@': {
                         template: 'sniper.html',
@@ -138,13 +138,24 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
             })
 
 
-                    // route for the gimmick page
-            .state('app.gimmick', {
-                url:'gimmick',
+                    // route for the ranged page
+            .state('app.ranged', {
+                url:'ranged',
                 views: {
                     'content@': {
-                        templateUrl : 'views/gimmick.html',
-                        controller  : 'GimmickController'
+                        templateUrl : 'views/ranged.html',
+                        controller  : 'RangedController'
+                     }
+                }
+            })
+
+                    // route for the melee page
+            .state('app.melee', {
+                url:'melee',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/melee.html',
+                        controller  : 'MeleeController'
                      }
                 }
             })
@@ -167,6 +178,17 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                     'content@': {
                         templateUrl : 'views/evaluator.html',
                         controller  : 'EvaluatorController'
+                    }
+                }
+            })
+
+            // route for the subscription page
+            .state('app.inscription', {
+                url: 'inscription',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/inscription.html',
+                        controller  : 'JoinusController'
                     }
                 }
             })

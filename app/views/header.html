@@ -1,65 +1,77 @@
 <div ng-controller="MenuController">
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#">LONGUE PORTEE</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Chasseur</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Tireur</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Soldat</a></li>
+<ul id="dropdown0" class="dropdown-content">
+  <li><a href="#">Distants</a></li>
+  <li><a href="hunter">&nbsp;&nbsp;&nbsp;Chasseur</a></li>
+  <li><a href="shooter">&nbsp;&nbsp;&nbsp;Tireur</a></li>
+  <li><a href="soldier">&nbsp;&nbsp;&nbsp;Soldat</a></li>
   <li class="divider"></li>
-  <li><a href="#">CORPS A CORPS</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Scout</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Cogneur</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Guerrier</a></li>
+  <li><a href="#">Corps à Corps</a></li>
+  <li><a href="scout">&nbsp;&nbsp;&nbsp;Scout</a></li>
+  <li><a href="bruiser">&nbsp;&nbsp;&nbsp;Cogneur</a></li>
+  <li><a href="warrior">&nbsp;&nbsp;&nbsp;Guerrier</a></li>
+</ul>
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="ranged">Longue portée</a></li>
+  <li><a href="melee">Mélée</a></li>
 </ul>
 
 <ul id="dropdown2" class="dropdown-content">
-  <li><a href="#">DEBUTANTS</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Le camp</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Le bruit</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Coups spéciaux</a></li>
+  <li><a href="#">Débutants</a></li>
+  <li><a href="camp">&nbsp;&nbsp;&nbsp;Le camp</a></li>
+  <li><a href="noise">&nbsp;&nbsp;&nbsp;Le bruit</a></li>
+  <li><a href="critical">&nbsp;&nbsp;&nbsp;Coups spéciaux</a></li>
   <li class="divider"></li>
-  <li><a href="#">CONFIRMES</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Les quêtes</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Le PVP</a></li>
+  <li><a href="#">Confirmés</a></li>
+  <li><a href="quest">&nbsp;&nbsp;&nbsp;Les quêtes</a></li>
+  <li><a href="pvp">&nbsp;&nbsp;&nbsp;Le PVP</a></li>
 </ul>
 
 <ul id="dropdown3" class="dropdown-content">
-  <li><a href="#">LONGUE PORTEE</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Chasseur</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Tireur</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Soldat</a></li>
+  <li><a href="#">Distants</a></li>
+  <li><a href="hunter">&nbsp;&nbsp;&nbsp;Chasseur</a></li>
+  <li><a href="shooter">&nbsp;&nbsp;&nbsp;Tireur</a></li>
+  <li><a href="soldier">&nbsp;&nbsp;&nbsp;Soldat</a></li>
   <li class="divider"></li>
-  <li><a href="#">CORPS A CORPS</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Scout</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Cogneur</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Guerrier</a></li>
+  <li><a href="#">Corps à Corps</a></li>
+  <li><a href="scout">&nbsp;&nbsp;&nbsp;Scout</a></li>
+  <li><a href="bruiser">&nbsp;&nbsp;&nbsp;Cogneur</a></li>
+  <li><a href="warrior">&nbsp;&nbsp;&nbsp;Guerrier</a></li>
 </ul>
 
 <ul id="dropdown4" class="dropdown-content">
-  <li><a href="#">DEBUTANTS</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Le camp</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Le bruit</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Coups spéciaux</a></li>
+  <li><a href="ranged">Longue portée</a></li>
+  <li><a href="melee">Mélée</a></li>
+</ul>
+
+<ul id="dropdown5" class="dropdown-content">
+  <li><a href="beginner">DEBUTANTS</a></li>
+  <li><a href="camp">&nbsp;&nbsp;&nbsp;Le camp</a></li>
+  <li><a href="noise">&nbsp;&nbsp;&nbsp;Le bruit</a></li>
+  <li><a href="critical">&nbsp;&nbsp;&nbsp;Coups spéciaux</a></li>
   <li class="divider"></li>
-  <li><a href="#">CONFIRMES</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Les quêtes</a></li>
-  <li><a href="#">&nbsp;&nbsp;&nbsp;Le PVP</a></li>
+  <li><a href="veteran">CONFIRMES</a></li>
+  <li><a href="quest">&nbsp;&nbsp;&nbsp;Les quêtes</a></li>
+  <li><a href="pvp">&nbsp;&nbsp;&nbsp;Le PVP</a></li>
 </ul>
 <nav class="white" role="navigation">
   <div class="nav-wrapper paddinglr">
     <a id="logo-container" href="/" class="brand-logo">French Squad</a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="#" class="dropdown-button" data-activates="dropdown1">Classes de joueurs<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a href="#" class="dropdown-button" data-activates="dropdown2">Nos tutoriels<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a href="#">Astuces de défi</a></li>
-      <li><a href="#">Se connecter</a></li>
+      <li><a href="#" class="dropdown-button" data-activates="dropdown0">Personnages<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="#" class="dropdown-button" data-activates="dropdown1">Equipements<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="#" class="dropdown-button" data-activates="dropdown2">Tutoriels<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="evaluator">Evaluateur</a></li>
+      <li><a href="login">Se connecter</a></li>
     </ul>
     <ul id="nav-mobile" class="side-nav">
-      <li><a href="#" class="dropdown-button" data-activates="dropdown3">Classes de joueurs<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a href="#" class="dropdown-button" data-activates="dropdown4">Tutoriels<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a href="#">Astuces de défi</a></li>
-      <li><a href="#">Se connecter</a></li>
+      <li><a href="#" class="dropdown-button" data-activates="dropdown3">Personnages<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="#" class="dropdown-button" data-activates="dropdown4">Equipements <i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="#" class="dropdown-button" data-activates="dropdown5">Tutoriels<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="evaluator">Evaluateur</a></li>
+      <li><a href="login">Se connecter</a></li>
     </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    <a href="/" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>
 </nav>
 </div>

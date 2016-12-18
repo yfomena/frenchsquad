@@ -28,6 +28,10 @@ angular.module('frenchsquadApp')
 
         }])
 
+        .controller('JoinusController', ['$scope', function($scope) {
+
+        }])
+
         .controller('SniperController', ['$scope','loginFactory', function($scope,loginFactory) {
 
         }])
@@ -72,7 +76,11 @@ angular.module('frenchsquadApp')
 
         }])
 
-        .controller('GimmickController', ['$scope','loginFactory', function($scope,loginFactory) {
+        .controller('MeleeController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
+        .controller('RangedController', ['$scope','loginFactory', function($scope,loginFactory) {
 
         }])
 
