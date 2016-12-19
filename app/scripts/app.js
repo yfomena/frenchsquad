@@ -23,7 +23,7 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                 url:'hunter',
                 views: {
                     'content@': {
-                        template: 'sniper.html',
+                        templateUrl: 'views/sniper.html',
                         controller  : 'SniperController'
                    }
                 }
@@ -55,7 +55,7 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                 url:'scout',
                 views: {
                     'content@': {
-                        template: 'scout.html',
+                        templateUrl: 'views/scout.html',
                         controller  : 'ScoutController'
                    }
                 }
@@ -192,6 +192,18 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                     }
                 }
             })
+
+            // route for the subscription page
+            .state('app.heroes', {
+                url: 'heroes',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/heroes.html',
+                        controller  : 'HeroesController'
+                    }
+                }
+            })
+
 
             // route for the contact us page
             .state('app.contactus', {

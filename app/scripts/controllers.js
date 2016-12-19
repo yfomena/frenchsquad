@@ -3,18 +3,17 @@
 angular.module('frenchsquadApp')
 
         .controller('IndexController', ['$scope', 'loginFactory', 'NgMap', function($scope, loginFactory, NgMap) {
-            $scope.img1 = "images/home_1.png";
             $scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqmu21j2u1a4lNVRwT8Kg-n-RumT0WAUI";
+            var ctrl = this;
             angular.element(document).ready(function () {
                 $('.parallax').parallax();
+                NgMap.getMap().then(function(map) {
+                  ctrl.map = map;
+                });
+                ctrl.showDetail = function() {
+                  ctrl.map.showInfoWindow('foo-iw', 'foo');
+                };
             });
-            var ctrl = this;
-            NgMap.getMap().then(function(map) {
-              ctrl.map = map;
-            });
-            this.showDetail = function() {
-              ctrl.map.showInfoWindow('foo-iw', 'foo');
-            };
         }])
 
         .controller('MenuController', ['$scope', 'loginFactory', function($scope, loginFactory) {
@@ -89,6 +88,10 @@ angular.module('frenchsquadApp')
         }])
 
         .controller('EvaluatorController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
+        .controller('HeroesController', ['$scope','loginFactory', function($scope,loginFactory) {
 
         }])
 
