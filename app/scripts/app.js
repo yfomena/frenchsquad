@@ -194,6 +194,17 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
             })
 
             // route for the subscription page
+            .state('app.newpassword', {
+                url: 'newpassword',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/newpassword.html',
+                        controller  : 'PasswordController'
+                    }
+                }
+            })
+
+            // route for the subscription page
             .state('app.heroes', {
                 url: 'heroes',
                 views: {

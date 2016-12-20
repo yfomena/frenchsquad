@@ -87,6 +87,10 @@ angular.module('frenchsquadApp')
 
         }])
 
+        .controller('PasswordController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
         .controller('EvaluatorController', ['$scope','loginFactory', function($scope,loginFactory) {
 
         }])

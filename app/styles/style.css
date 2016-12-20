@@ -61,12 +61,28 @@ li.default {
   font-size: 13px;
   font-weight: normal;
 }
+
 .text-presentation {
   text-align: justify;
   font-size: 13px;
   font-weight: normal;
   /*line-height: normal;*/
 }
+
 .paddinglr {
   padding: 0 50px;
 }
+
+.menu-element {
+  width: 150px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
