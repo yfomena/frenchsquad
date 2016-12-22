@@ -1,26 +1,26 @@
-<div class="container fullheight" ng-controller="LoginController">
+<div class="container" ng-controller="LoginController">
+  <p class="hide-on-med-and-down">&nbsp;<p>
   <div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s8">
+        <div class="input-field col s5 offset-s3">
           <i class="material-icons prefix">account_circle</i>
           <input id="icon_prefix" type="email" class="validate">
           <label for="icon_prefix">Email</label>
         </div>
-        <div class="input-field col s8">
+        <div class="input-field col s5 offset-s3">
           <i class="material-icons prefix">visibility</i>
           <input id="icon_password" type="password" class="validate">
           <label for="icon_password">Mot de passe</label>
         </div>
         <div class="input-field col s8">
           <p class="right-align">
-            <button class="btn btn-large waves-effect waves-light" type="button" name="action">Login</button>
+            <a ui-sref="app.newpassword"><i>Mot de passe oublié?</i></a>
           </p>
         </div>
         <div class="input-field col s8">
           <p class="right-align">
-            <a ui-sref="app.newpassword"><b>Mot de passe oublié?</b></a><br><br>
-            <a ui-sref="app.inscription">Créer un compte</a>
+            <a ui-sref="app.inscription"><u>Créer un compte</u></a> &nbsp;&nbsp;<button class="btn waves-effect waves-light" type="button" name="action">Login</button>
           </p>
         </div>
       </div>

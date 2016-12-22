@@ -193,7 +193,7 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                 }
             })
 
-            // route for the subscription page
+            // route for the new password page
             .state('app.newpassword', {
                 url: 'newpassword',
                 views: {
@@ -204,7 +204,7 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                 }
             })
 
-            // route for the subscription page
+            // route for the heroes page
             .state('app.heroes', {
                 url: 'heroes',
                 views: {
@@ -215,6 +215,60 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                 }
             })
 
+            // route for the beginner page
+            .state('app.beginner', {
+                url: 'beginner',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/beginner.html',
+                        controller  : 'BeginnerController'
+                    }
+                }
+            })
+
+            // route for the veteran page
+            .state('app.veteran', {
+                url: 'veteran',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/veteran.html',
+                        controller  : 'VeteranController'
+                    }
+                }
+            })
+
+            // route for the ranged class page
+            .state('app.rangedclass', {
+                url: 'rangedclass',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/rangedclass.html',
+                        controller  : 'RangedclassController'
+                    }
+                }
+            })
+
+            // route for the melee class page
+            .state('app.meleeclass', {
+                url: 'meleeclass',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/meleeclass.html',
+                        controller  : 'MeleeclassController'
+                    }
+                }
+            })
+
+            // route for the game modes page
+            .state('app.gamemode', {
+                url: 'gamemode',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/gamemode.html',
+                        controller  : 'GamemodeController'
+                    }
+                }
+            })
 
             // route for the contact us page
             .state('app.contactus', {
