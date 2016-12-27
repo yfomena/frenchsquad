@@ -1,23 +1,39 @@
 <div class="container" ng-controller="JoinusController">
+  <p class="hide-on-med-and-down">&nbsp;<p>
   <div class="row">
-    <div class="col s12">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/quest.jpg">
-          <span class="card-title">Inscription</span>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s5 offset-s3">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="email" class="validate">
+          <label for="icon_prefix">Email</label>
         </div>
-        <div class="card-content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        <div class="input-field col s5 offset-s3">
+          <i class="material-icons prefix">visibility</i>
+          <input id="icon_password" type="password" class="validate">
+          <label for="icon_password">Mot de passe</label>
+        </div>
+        <div class="input-field col s5 offset-s3">
+          <i class="material-icons prefix">visibility</i>
+          <input id="icon_passwordconf" type="password" class="validate">
+          <label for="icon_passwordconf">Confirmation du mot de passe</label>
+        </div>
+        <div class="input-field col s5 offset-s3">
+          <i class="material-icons prefix">contacts</i>
+          <input id="icon_pseudo" type="text" class="validate">
+          <label for="icon_pseudo">Pseudo dans le jeu</label>
+        </div>
+        <div class="input-field col s5 offset-s3">
+          <i class="material-icons prefix">room</i>
+          <input id="icon_city" type="text" class="validate">
+          <label for="icon_city">Ville</label>
+        </div>
+        <div class="input-field col s8">
+          <p class="right-align">
+            <button class="btn waves-effect waves-light" type="button" name="action">Valider</button>
           </p>
         </div>
-        <div class="card-action">
-          <a href="#">Inscription</a>
-        </div>
       </div>
-    </div>
+    </form>
   </div>
 </div>

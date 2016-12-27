@@ -1,4 +1,4 @@
-angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
+angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ncy-angular-breadcrumb', 'ngMap'])
 .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
                     // route for the home page
@@ -19,8 +19,11 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ngMap'])
                 }
             })
                     // route for the sniper page
-            .state('app.hunter', {
+            .state('app.rangedclass.hunter', {
                 url:'hunter',
+                ncyBreadcrumb: {
+                  label: 'chasseur'
+                },
                 views: {
                     'content@': {
                         templateUrl: 'views/sniper.html',
