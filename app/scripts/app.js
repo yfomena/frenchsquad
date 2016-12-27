@@ -63,7 +63,7 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ncy-angular-breadc
             })
 
                     // route for the scout page
-            .state('app.meleeclass.cout', {
+            .state('app.meleeclass.scout', {
                 url:'scout',
                 ncyBreadcrumb: {
                   label: 'éclaireur'
@@ -329,7 +329,7 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ncy-angular-breadc
             })
 
             // route for the game modes page
-            .state('app.gamemode', {
+            .state('app.beginner.gamemode', {
                 url: 'gamemode',
                 ncyBreadcrumb: {
                   label: 'modes de jeu'
