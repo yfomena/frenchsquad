@@ -5,7 +5,7 @@ angular.module('frenchsquadApp')
         .controller('IndexController', ['$scope', 'loginFactory', 'NgMap', function($scope, loginFactory, NgMap) {
             $scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqmu21j2u1a4lNVRwT8Kg-n-RumT0WAUI";
             var ctrl = this;
-            angular.element(document).ready(function () {
+            $scope.$on('$viewContentLoaded', function(event) {
                 $('.parallax').parallax();
                 NgMap.getMap().then(function(map) {
                   ctrl.map = map;
@@ -16,10 +16,10 @@ angular.module('frenchsquadApp')
             });
         }])
 
-        .controller('MenuController', ['$scope', 'loginFactory', function($scope, loginFactory) {
-            angular.element(document).ready(function () {
-                $('.dropdown-button').dropdown();
-                $('.button-collapse').sideNav();
+        .controller('MenuController', ['$scope', 'loginFactory', function($scope, $rootScope, loginFactory) {
+            $scope.$on('$viewContentLoaded', function(event) {
+              $('.dropdown-button').dropdown();
+              $('.button-collapse').sideNav();
             });
         }])
 
@@ -87,11 +87,35 @@ angular.module('frenchsquadApp')
 
         }])
 
+        .controller('PasswordController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
         .controller('EvaluatorController', ['$scope','loginFactory', function($scope,loginFactory) {
 
         }])
 
         .controller('HeroesController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
+        .controller('BeginnerController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
+        .controller('VeteranController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
+        .controller('MeleeclassController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
+        .controller('GamemodeController', ['$scope','loginFactory', function($scope,loginFactory) {
+
+        }])
+
+        .controller('RangedclassController', ['$scope','loginFactory', function($scope,loginFactory) {
 
         }])
 
