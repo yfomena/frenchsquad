@@ -86,3 +86,38 @@ body {
   main {
     flex: 1 0 auto;
   }
+
+ol.breadcrumb {
+  list-style-type: none;
+}
+
+ol.breadcrumb li {
+  font-size: 13px;
+  width: auto;
+  margin-right: 5px;
+  display: inline;
+}
+
+ol.breadcrumb li span {
+  font-style: italic;
+  color: #ccc;
+}
+
+ol.breadcrumb li:after {
+  content: " > ";
+  color: #ccc;
+  font-size: 12px;
+}
+
+ol.breadcrumb li:last-child:after {
+  content: none;
+}
+
+li.collection-item {
+  border:0px;
+  border-bottom: 1px solid #ccc;
+}
+
+li.collection-item:last-child {
+  border-bottom: 0px;
+}

@@ -21,7 +21,64 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ncy-angular-breadc
                     }
                 }
             })
-                    // route for the sniper page
+
+            // route for the ranged class page
+            .state('app.rangedclass', {
+                url: 'rangedclass/',
+                ncyBreadcrumb: {
+                  label: 'distants'
+                },
+                views: {
+                    'content@': {
+                        templateUrl : 'views/rangedclass.html',
+                        controller  : 'RangedclassController'
+                    }
+                }
+            })
+
+            // route for the melee class page
+            .state('app.meleeclass', {
+                url: 'meleeclass/',
+                ncyBreadcrumb: {
+                  label: 'corps à corps'
+                },
+                views: {
+                    'content@': {
+                        templateUrl : 'views/meleeclass.html',
+                        controller  : 'MeleeclassController'
+                    }
+                }
+            })
+
+            // route for the beginner page
+            .state('app.beginner', {
+                url: 'beginner/',
+                ncyBreadcrumb: {
+                  label: 'débutants'
+                },
+                views: {
+                    'content@': {
+                        templateUrl : 'views/beginner.html',
+                        controller  : 'BeginnerController'
+                    }
+                }
+            })
+
+            // route for the veteran page
+            .state('app.veteran', {
+                url: 'veteran/',
+                ncyBreadcrumb: {
+                  label: 'confirmés'
+                },
+                views: {
+                    'content@': {
+                        templateUrl : 'views/veteran.html',
+                        controller  : 'VeteranController'
+                    }
+                }
+            })
+
+            // route for the sniper page
             .state('app.rangedclass.hunter', {
                 url:'hunter',
                 ncyBreadcrumb: {
@@ -135,7 +192,7 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ncy-angular-breadc
             .state('app.beginner.critical', {
                 url:'critical',
                 ncyBreadcrumb: {
-                  label: 'coups critique'
+                  label: 'coups critiques'
                 },
                 views: {
                     'content@': {
@@ -268,62 +325,6 @@ angular.module('frenchsquadApp', ['ui.router', 'ngResource', 'ncy-angular-breadc
                     'content@': {
                         templateUrl : 'views/heroes.html',
                         controller  : 'HeroesController'
-                    }
-                }
-            })
-
-            // route for the beginner page
-            .state('app.beginner', {
-                url: 'beginner',
-                ncyBreadcrumb: {
-                  label: 'débutants'
-                },
-                views: {
-                    'content@': {
-                        templateUrl : 'views/beginner.html',
-                        controller  : 'BeginnerController'
-                    }
-                }
-            })
-
-            // route for the veteran page
-            .state('app.veteran', {
-                url: 'veteran',
-                ncyBreadcrumb: {
-                  label: 'confirmés'
-                },
-                views: {
-                    'content@': {
-                        templateUrl : 'views/veteran.html',
-                        controller  : 'VeteranController'
-                    }
-                }
-            })
-
-            // route for the ranged class page
-            .state('app.rangedclass', {
-                url: 'rangedclass',
-                ncyBreadcrumb: {
-                  label: 'distants'
-                },
-                views: {
-                    'content@': {
-                        templateUrl : 'views/rangedclass.html',
-                        controller  : 'RangedclassController'
-                    }
-                }
-            })
-
-            // route for the melee class page
-            .state('app.meleeclass', {
-                url: 'meleeclass',
-                ncyBreadcrumb: {
-                  label: 'corps à corps'
-                },
-                views: {
-                    'content@': {
-                        templateUrl : 'views/meleeclass.html',
-                        controller  : 'MeleeclassController'
                     }
                 }
             })
