@@ -29,7 +29,7 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('usemin', 'imagemin','copyfonts','copyfavicons','copyviews');
+    gulp.start('usemin', 'imagemin','copyfonts','copyfavicons','copyviews','browser-sync');
     //gulp.start('usemin', 'copyimages','copyfonts','copyfavicons','copyinitjs','copyviews');
 });
 

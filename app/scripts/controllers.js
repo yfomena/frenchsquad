@@ -76,11 +76,118 @@ angular.module('frenchsquadApp')
         }])
 
         .controller('MeleeController', ['$scope','loginFactory', function($scope,loginFactory) {
-
+          $scope.mtraits = [
+								{
+								  title:'Chance',
+								  image: 'images/luck.jpg',
+								  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+								},
+								{
+                  title:'Destruction',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+								{
+                  title:'Intercepteur',
+                  image: 'images/luck.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+								{
+                  title:'Specialiste des armes',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+								{
+                  title:'Precision',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+								{
+                  title:'Commotion',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+								{
+                  title:'Amplitude',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+								{
+                  title:'Coup rapide',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+								{
+                  title:'Reduction de la menace',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+								{
+                  title:'Charge',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                }
+              ]
         }])
 
         .controller('RangedController', ['$scope','loginFactory', function($scope,loginFactory) {
-
+          $scope.rtraits = [
+                {
+                  title:'Chance',
+                  image: 'images/luck.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Destruction',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Intercepteur',
+                  image: 'images/luck.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Specialiste des armes',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Precision',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Dispersion',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Gros calibre',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'surpuissance',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Silencieux',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Transperceur',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                },
+                {
+                  title:'Charge',
+                  image: 'images/dmg.jpg',
+                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
+                }
+              ]
         }])
 
         .controller('LoginController', ['$scope','loginFactory', function($scope,loginFactory) {
